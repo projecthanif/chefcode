@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    /* background-color: white; */
+    /* color: black; */
+    font-family: sans-serif;
+    /* font-family: monospace; */
+}
+/* Navigation Start Here */
+ul.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    /* margin-right: 100px; */
+    list-style-type:none;
+    position: sticky;
+    top: 0;
+}
+ul.nav li{
+    display: inline-block;
+}
+ul.nav li a{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:400px) {
+    ul.nav{display: block;width: 100%;padding: 0; text-align: center;}
+    /* ul.nav li a:hover{display: ;} */
+}
+/* Navigation Ends Here */
+
+/*Jumbotron starts here*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 5, 5);
+    padding: 150px;
+    font-family: monospace;
+    font-size: 2rem;
+}
+.container .container-left{
+    margin: 60px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.container .container-left h1{
+    font-size: 5rem;
+    color: aqua;
+    /* display: inline-block; */
+}
+.container .container-left .btn , .btn a{
+    text-decoration: none;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container .container-right img{
+   max-width: 300px;
+}
+@media screen and (max-width:900px) {
+    .container{padding: 10px;}
+}
+@media screen and (max-width:450px){
+    .container{display:block; padding: 20px; text-align: center;}
+    .container .container-left{margin: 0;}
+}
+
+/*Jumbotron Ends here*/
+/*About starts here*/
+.about{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 100px; */padding: 150px;
+    text-align: center;
+}
+.about .about-left img{
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+}
+.about .about-right{
+    line-height: 50px;
+    text-align: justify;
+    max-width: 500px;
+    /* background-color: aqua; */
+    /* max-height: 200px; */
+}
+.about .about-right h5{
+    /* display: inline-block; */
+    font-size: 1em;
+    color:aqua;
+}
+.about .about-right h4{
+    line-height: normal;
+    font-size: 3em;
+}
+.about .about-right p{
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.about .about-right .btn, .btn a{
+    text-decoration: none;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+@media screen and (max-width:900px){
+    .about{padding: 40px; display: flex;justify-content: space-between;}
+    .about .about-right{margin-left: 10px; }
+}
+@media screen and (max-width:450px) {
+    .about{display:block; padding: 45px;}
+    .about .about-left img{width: auto; height: auto;}
+    .about .about-right{max-width: 300px;text-align: center;margin: auto;}
+}
+/*About Ends here*/
+/*Services start*/
+.container-service{
+    padding: 100px;
+}
+.container-service .service-head{
+    /* padding: 100px; */
+    text-align: center;
+    line-height: 60px;
+}
+.container-service .service-head h5{
+    color: aqua;
+}
+.container-service .service-head h2{
+    font-size: 2rem;
+}
+.container-service .container-flex{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 100px; */
+    align-items: baseline;
+    text-align: center;
+    gap: 50px;
+    
+}
+.container-service .container-flex img{
+    width: 100px;
+    max-height: 100px;
+
+}
+.container-service .container-flex h4{
+    text-align: center;
+}
+.container-service .container-flex p{
+    text-align: center;
+}
+@media screen and (max-width:450px) {
+    .container-service{padding: 0; text-align: center;}
+    .container-service .container-flex{display: block;}
+}
+/*Services ends*/
+/*Menu container */
+.menu-container{
+    padding: 100px;
+    /* background-color:black; */
+}
+.menu-container .menu-head{
+    line-height: 40px;
+    text-align: center;
+}
+.menu-container .menu-head header{
+    color: aqua;
+}
+.menu-container .menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:baseline;
+    text-align: center;
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    /* gap: 10px; */
+}
+.menu-container .menu img{
+    max-width:100px;
+}
+.menu-box{
+    width: 150px;
+    padding: 20px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 20px;
+}.menu .menu-box .fas{
+    float: right;
+    color: white;
+    
+}
+@media screen and (max-width:900px) {
+    .menu-container .menu{ margin: 0;}
+}
+@media screen and (max-width:450px) {
+    .menu-container{padding: 50px; text-align: center;}    
+    .menu-container .menu{display:block;margin: 0;padding: 50px; text-align: center;}
+    .menu-box{margin-bottom: 10px;}
+}
+/*Menu container ends here */
+
+/*Contact start here*/
+.contact{
+    padding: 100px;
+    line-height: 60px;
+}
+.contact .container-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact h5{
+    font-size: 1rem;
+    color: aqua;
+}
+.contact h3{
+    font-size: 3rem;
+}
+.container-contact .btn , .btn a{
+    text-decoration: none;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+@media screen and (max-width:450px) {
+    .contact{padding: 10px; text-align: center;}
+    .contact .container-contact{display: block; text-align: center; line-height: 70px;}
+    .contact {line-height: normal;}
+    .contact .btn{margin-bottom: 40px;}
+    .contact p{
+        margin-bottom: 20px;
+    }
+}
+/*Contact ends here*/
+/*Footer*/
+footer{
+    padding: 100px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 100px; */
+}
+.social h5{
+    text-align: center;
+    color: aqua;
+    font-size: 2rem;
+}
+.social a i{
+    text-decoration: none;
+    color: white;
+}
+.service ul{
+    text-align: center;
+    line-height: 30px;
+   list-style-type: none;
+}
+.service  h5{
+    font-size: 2rem;
+}
+
+.info ul{
+    text-align: center;
+    line-height: 30px;
+   list-style-type: none;
+}
+.info  h5{
+    
+    font-size: 2rem;
+}
+address{text-align: center;}
+address h5{
+    font-size: 2rem;
+}
+@media screen and (max-width:900px) {
+    footer{padding: 20px;}
+}
+@media screen and (max-width:450px){
+    footer{margin-top: 0px;}
+    .footer{display: block; text-align: center; padding: 0; margin: 0;line-height: normal;}
+    .social,.service,.info{margin-bottom: 30px; text-align: center;}
+    info ul{line-height: normal;}
+}
+.foot{
+    text-align: center;
+    /* margin-left: 100px; */
+}
